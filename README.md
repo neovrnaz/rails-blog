@@ -1,24 +1,11 @@
-# README
+# Ruby on Rails Blog
+This blog was built using Ruby on Rails
+* 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+First, clone or download the files. Once in the directory, you can type in this command prompt to start using the address book.  
 
-Things you may want to cover:
+```shell script
 
-* Ruby version
+```
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## License:  [MIT](LICENSE)
