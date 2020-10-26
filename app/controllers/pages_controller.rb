@@ -22,7 +22,17 @@ class PagesController < ApplicationController
     @page = Page.find(params[:id])
   end
 
-  def show_edited_page
+  def update
     @page = Page.find(params[:id])
+    page_params = params.require(:page).permit(:title, :body, :slug)
+    @page.update(page_params)
+    redirect_to @page
+  end
+
+  def delete
+    @page = Page.destroy(params[:id])
+    page_params = params.require(:page).permit(:title, :body, :slug)
+    @page.delete(page_params)
+    redirect_to '/pages'
   end
 end

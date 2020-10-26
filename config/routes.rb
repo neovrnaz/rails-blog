@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get '/pages/new', to: 'pages#new', as: 'new_page'
   get '/pages/:id', to: 'pages#show', as: 'page'
   get '/pages/:id/edit', to: 'pages#edit', as: 'edit_page'
-  put '/pages/:id/edit', to: 'pages#create', as: 'edited_page'
+  patch '/pages/:id', to: 'pages#update', as: 'edited_page'
+  delete '/pages/:id', to: 'pages#delete', as: 'delete_page'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
