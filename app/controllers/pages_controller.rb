@@ -27,9 +27,9 @@ class PagesController < ApplicationController
     redirect_to @page
   end
 
-  def delete
+  def destroy
     @page = Page.destroy(params[:id])
-    @page.delete(page_params)
+    @page.destroy
     redirect_to '/pages'
   end
 
