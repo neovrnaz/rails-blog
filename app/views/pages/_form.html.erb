@@ -1,15 +1,18 @@
 <%= form_for(@page) do |form| %>
+  <h2><%= @page.title %></h2>
   <div class="field">
     <%= form.label :title %>
     <%= form.text_field :title %>
   </div>
 
   <div class="field">
+    <p>Edit:</p>
     <%= form.label :body %>
     <%= form.text_area :body %>
   </div>
 
   <div class="field">
+    <p>Edit:</p>
     <%= form.label :slug %>
     <%= form.text_field :slug %>
   </div>
