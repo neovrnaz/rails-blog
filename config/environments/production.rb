@@ -1,8 +1,10 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
+  config.secret_key_base = '44973aed14356c890446bfc44b42e987ac82b15d1f3a402d60b93fc07df09457d634e135f331562ce74a2b1fec9e5061458880c2ae9139e73cd7a36ba4136521'
+
   # Code is not reloaded between requests.
-  config.cache_classes = true
+  config.cache_classes = false
 
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
