@@ -2,17 +2,36 @@
   "name": "rails_blog",
   "private": true,
   "dependencies": {
-    "@shopify/stylelint-plugin": "^10.0.1",
-    "prettier": "2.1.2",
-    "stylelint": "^13.7.2",
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "4.3.0",
+    "@shopify/stylelint-plugin": "^10.0.1",
+    "prettier": "^2.1.2",
+    "stylelint": "^13.7.2",
     "turbolinks": "^5.2.0"
   },
   "version": "0.1.0",
   "devDependencies": {
+    "@shopify/prettier-config": "^1.1.2",
     "webpack-dev-server": "^3.11.0"
+  },
+  "stylelint": {
+    "extends": [
+      "@shopify/stylelint-plugin",
+      "@shopify/stylelint-plugin/prettier"
+    ],
+    "rules": {
+      "color-no-hex": null
+
+    }
+  },
+  "scripts": {
+    "stylelint": "stylelint 'src/**/*.scss'"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "bracketSpacing": false
   }
 }
