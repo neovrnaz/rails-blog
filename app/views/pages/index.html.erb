@@ -1,3 +1,8 @@
+<!--Navigation-->
+<%= link_to "Logo", '/' %>
+<%= button_to "Pages", '/pages' %>
+<%= button_to "Posts", '/posts' %>
+
 <h1>Blog Pages</h1>
 
 <% @pages.each do |page| %>
@@ -7,4 +12,4 @@
 <% end %>
 
 <%= link_to 'New Page', new_page_path %>
-<%= button_to "Home", '/', method: :get %>
+
