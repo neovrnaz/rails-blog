@@ -5,11 +5,13 @@
 
 <h1>Blog Pages</h1>
 
-<% @pages.each do |page| %>
-  <p>
-    <%= link_to page.title, page %>
-  </p>
-<% end %>
+<div class="page-card">
+  <% @pages.each do |page| %>
+    <p>
+      <%= link_to page.title, page %>
+    </p>
+  <% end %>
+</div>
 
 <%= link_to 'New Page', new_page_path %>
 
