@@ -1,97 +1,145 @@
-/* SCSS HEX */
+// ==========================================================================
+// Helpers
+// ==========================================================================
+
+// Clearfix
+
+%clearfix {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+// Screen reader text
+
+.srt {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  position: absolute;
+  padding: 0;
+  width: 1px;
+}
+
+// For pseudo-elements
+
+%pseudos {
+  display: block;
+  content: '';
+  position: absolute;
+}
+
+
+// ==========================================================================
+// Global Config
+// ==========================================================================
+
+// Font Stacks
+
+$font-url--google: 'http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900';
+$font-family--primary: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family--secondary: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// Font Weights
+
+$font-weight--thin: 100;
+$font-weight--light: 300;
+$font-weight--medium: 400;
+$font-weight--bold: 700;
+$font-weight--ultra-bold: 900;
+
+// Descriptive Base Colors
+
+$white: #fff;
+$black: #1f1f1f;
+$grey: #797e83;
+
+$fountain-blue: #52bab3;
+$emerald: #5ece7f;
+$sunglo: #e67478;
+$coral: #ff784f;
+$purple-majesty: #9279c3;
+$scooter: #39add1;
+
+// Header Font size
+$heading-font-size: 40px;
+
+// Color Usage
 $atomic-tangerine: #f79256ff;
 $deep-champagne: #fbd1a2ff;
 $middle-blue-green: #7dcfb6ff;
 $pacific-blue: #00b2caff;
 $yale-blue: #1d4e89ff;
 
-$color-primary: $yale-blue;
+// Text
+$base__font-size: 16px;
+$base__line: 24px;
+
+// Base Styles
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  background-color: #ffffff;
-  color: #333333;
-  margin: 33px;
+  font-size: $base__font-size;
+  line-height: ($base__line/$base__font-size);
+  font-family: $font-family--primary;
 }
 
-body,
-p,
-ol,
-ul,
-td {
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
+header {
+  font-size: $heading-font-size;
+  font-weight: $font-weight--ultra-bold;
+  margin: 120px;
 }
 
-pre {
-  background-color: #eeeeee;
-  padding: 10px;
-  font-size: 11px;
-}
-
-a {
-  color: #000000;
-}
-
-a:visited {
-  color: #666666;
-}
-
-a:hover {
-  color: #ffffff;
-  background-color: #000000;
-}
-
-th {
-  padding-bottom: 5px;
-}
-
-td {
-  padding: 0 5px 7px;
-}
-
-div.field,
-div.actions {
-  margin-bottom: 10px;
-}
-
-#notice {
-  color: green;
-}
-
-.field_with_errors {
-  padding: 2px;
-  background-color: red;
-  display: table;
-}
-
-#error_explanation {
-  width: 450px;
-  border: 2px solid red;
-  padding: 7px 7px 0;
-  margin-bottom: 20px;
-  background-color: #f0f0f0;
-}
-
-#error_explanation h2 {
+.header-text-left {
   text-align: left;
-  font-weight: bold;
-  padding: 5px 5px 5px 15px;
-  font-size: 12px;
-  margin: -7px -7px 0;
-  background-color: #cc0000;
-  color: #ffffff;
+  position: absolute;
 }
 
-#error_explanation ul li {
-  font-size: 12px;
-  list-style: square;
+.container {
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  color: $black;
 }
 
-label {
-  display: block;
+.forest-img {
+  position: relative;
+  width: 100%;
+  opacity: 0.4;
 }
 
-.main-nav {
-  color: $yale-blue;
+h1 {
+  font-weight: $font-weight--bold;
+  font-size: $heading-font-size;
+  font-family: $font-family--primary;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  margin-left: 130px;
+  width: 100px;
+}
+
+h2 {
+  font-family: $font-family--secondary;
+  font-weight: $font-weight--thin;
+}
+
+.icon-toggle {
+  position: absolute;
+  width: 25px;
+  height: 17px;
+  border-top: $grey;
 }
