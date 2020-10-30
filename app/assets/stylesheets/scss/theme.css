@@ -1,14 +1,7 @@
-.srt {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  position: absolute;
-  padding: 0;
-  width: 1px;
-}
-
+/*================ Blog Builder ================*/
+/*================ Variables ================*/
+/*================ Color Variables ================*/
+/*================ Typography ================;*/
 * {
   box-sizing: border-box;
 }
@@ -65,11 +58,18 @@ h2 {
   font-weight: 100;
 }
 
-.icon-toggle {
-  position: absolute;
-  width: 25px;
-  height: 17px;
-  border-top: #797e83;
+.top-nav {
+  background-color: #1f1f1f;
+  overflow: hidden;
+}
+
+.top-nav a {
+  float: left;
+  color: #f6f6f6;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-style: 16px;
 }
 
 /*# sourceMappingURL=theme.css.map */

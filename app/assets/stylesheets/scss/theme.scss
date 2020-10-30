@@ -1,62 +1,43 @@
-// ==========================================================================
-// Helpers
-// ==========================================================================
+/*================ Blog Builder ================*/
 
-// Clearfix
+/*================ Variables ================*/
 
-%clearfix {
-  &:after {
-    content: '';
-    display: table;
-    clear: both;
-  }
-}
+/*================ Color Variables ================*/
 
-// Screen reader text
+// Text colors
+$color-text: #101010;
+$color-body-text: #101010;
 
-.srt {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  position: absolute;
-  padding: 0;
-  width: 1px;
-}
+// Button colors
+$color-btn-primary: #60b077;
+$color-btn-primary-text: #080808;
 
-// For pseudo-elements
+// Descriptive Base Colors
+$white: #ffffff;
+$black: #1f1f1f;
+$grey: #797e83;
+$light-gray: #f6f6f6;
 
-%pseudos {
-  display: block;
-  content: '';
-  position: absolute;
-}
+// Link buttons and secondary cta
+$color-link: $color-body-text;
+$opacity-link-hover: 0.6;
 
+// Overlays
+$opacity-image-overlay: 0.4;
 
-// ==========================================================================
-// Global Config
-// ==========================================================================
+/*================ Typography ================;*/
 
 // Font Stacks
-
 $font-url--google: 'http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900';
 $font-family--primary: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $font-family--secondary: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 // Font Weights
-
 $font-weight--thin: 100;
 $font-weight--light: 300;
 $font-weight--medium: 400;
 $font-weight--bold: 700;
 $font-weight--ultra-bold: 900;
-
-// Descriptive Base Colors
-
-$white: #fff;
-$black: #1f1f1f;
-$grey: #797e83;
 
 $fountain-blue: #52bab3;
 $emerald: #5ece7f;
@@ -76,8 +57,8 @@ $pacific-blue: #00b2caff;
 $yale-blue: #1d4e89ff;
 
 // Text
-$base__font-size: 16px;
-$base__line: 24px;
+$base-font-size: 16px;
+$base-line: 24px;
 
 // Base Styles
 
@@ -92,13 +73,12 @@ body {
 }
 
 body {
-  font-size: $base__font-size;
-  line-height: ($base__line/$base__font-size);
+  font-size: $base-font-size;
+  line-height: ($base-line/$base-font-size);
   font-family: $font-family--primary;
 }
 
-top-nav {
-
+.top-nav {
 }
 
 header {
@@ -122,7 +102,7 @@ header {
 .forest-img {
   position: relative;
   width: 100%;
-  opacity: 0.4;
+  opacity: $opacity-image-overlay;
 }
 
 h1 {
@@ -141,9 +121,16 @@ h2 {
   font-weight: $font-weight--thin;
 }
 
-.icon-toggle {
-  position: absolute;
-  width: 25px;
-  height: 17px;
-  border-top: $grey;
+.top-nav {
+  background-color: $black;
+  overflow: hidden;
+}
+
+.top-nav a {
+  float: left;
+  color: $light-gray;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-style: $base-font-size;
 }

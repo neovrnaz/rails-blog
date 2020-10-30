@@ -23,11 +23,8 @@
       "@shopify/stylelint-plugin/prettier"
     ],
     "rules": {
-      "color-no-hex": null
+      "comment-whitespace-inside": "never"
     }
-  },
-  "scripts": {
-    "stylelint": "stylelint 'src/**/*.scss'"
   },
   "prettier": {
     "singleQuote": true,

@@ -9,15 +9,15 @@
 <body>
 <div>
   <header>
-    <ul>
-      <li><a href="">Pages</a></li>
-      <li><a href="">Posts</a></li>
-      <li><a href="">README</a></li>
-    </ul>
+    <nav class="top-nav">
+      <a href="<%= pages_path %>>">Pages</a>
+      <a href="<%= posts_path %>>">Posts</a>
+      <a href="/readme">Readme</a>
+    </nav>
   </header>
   <div class="container">
     <%= image_tag "pic-forest.jpg", class: "forest-img" %>
-    <h1 class="header-text-left">You can begin by</h1>
+    <h1 class="header-text-left">Welcome to the site!</h1>
   </div>
 </div>
 </body>
