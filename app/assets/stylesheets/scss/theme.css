@@ -1,3 +1,4 @@
+/* SCSS HEX */
 body {
   background-color: #ffffff;
   color: #333333;
@@ -81,6 +82,10 @@ div.actions {
 
 label {
   display: block;
+}
+
+.main-nav {
+  color: #1d4e89ff;
 }
 
 /*# sourceMappingURL=theme.css.map */

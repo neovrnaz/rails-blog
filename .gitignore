@@ -92,3 +92,9 @@ node_modules/
 
 # Ignore uploaded files in development
 /public/uploads
+
+# Ignore sass maps
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map

@@ -1,3 +1,12 @@
+/* SCSS HEX */
+$atomic-tangerine: #f79256ff;
+$deep-champagne: #fbd1a2ff;
+$middle-blue-green: #7dcfb6ff;
+$pacific-blue: #00b2caff;
+$yale-blue: #1d4e89ff;
+
+$color-primary: $yale-blue;
+
 body {
   background-color: #ffffff;
   color: #333333;
@@ -81,4 +90,8 @@ div.actions {
 
 label {
   display: block;
+}
+
+.main-nav {
+  color: $yale-blue;
 }
