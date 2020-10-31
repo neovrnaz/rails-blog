@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :posts
   resources :pages
   resources :playground
-  get 'readme', to: 'readme#index', as: 'index'
+  resources :readme
   # The "to:" key specifies which controllers action method the request should be sent to.
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

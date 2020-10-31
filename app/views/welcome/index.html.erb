@@ -1,24 +1,6 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Home</title>
-</head>
-<body>
-<div>
-  <header>
-    <nav class="top-nav">
-      <%= link_to "Pages", "/pages" %>
-      <%= link_to "Posts", "/posts" %>
-      <a href="/readme">Readme</a>
-    </nav>
-  </header>
-  <div class="container">
-    <%= image_tag "pic-forest.jpg", class: "forest-img" %>
-    <h1 class="header-text-left">Welcome to the site!</h1>
-  </div>
+<%= content_for :title, "Welcome" %>
+
+<div class="container">
+  <%= image_tag "pic-forest.jpg", class: "forest-img" %>
+  <h1 class="picture-heading-text">Welcome to the site!</h1>
 </div>
-</body>
-</html>

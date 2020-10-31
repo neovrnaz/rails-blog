@@ -1,13 +1,40 @@
-<!doctype html>
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <%= content_for :title, "Playgrounds" %>
-</head>
-<body>
+<style>
+    .em {
+        margin-top: 20px;
+        margin-bottom: 35px;
+    }
 
-</body>
-</html>
+    .px {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    h4 + ul {
+        margin-top: -16px;
+    }
+
+    .px-vs-em {
+        padding-top: 2px;
+    }
+
+</style>
+
+
+<div class="px-vs-em">
+
+  <h4>ems</h4>
+  <ul>
+    <li class="em">
+      Lorem ipsum dolor sit amet, <span> Lorem ipsum dolor. </span> consectetur adipisicing elit. Praesentium,.<br>
+      tempora ipsum dolor sit amet, consectetur adipisicing elit. Atque cumque eum ex fuga rerum. Commodi.
+    </li>
+  </ul>
+
+  <h4>pixels</h4>
+  <ul>
+    <li class="px">
+      A aliquid et iste <span> Lorem ipsum dolor. </span> maxime perspiciatis recusandae repellendus saepe! Atque.<br>
+      tempora ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, voluptatem? Lorem ipsum dolor.
+    </li>
+  </ul>
+</div>

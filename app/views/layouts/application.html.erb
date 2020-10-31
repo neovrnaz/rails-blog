@@ -1,27 +1,24 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= yield(:title) %></title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<html lang="en">
+<head>
+  <title><%= yield(:title) %></title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-  <header>
-    <!--Navigation-->
-    <nav class="top-nav">
-      <%= link_to "Logo", root_path %>
-      <%= link_to 'Posts', posts_path %>
-      <a href="/readme">Readme</a>
-    </nav>
-  </header>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+<header>
+  <p>text</p>
+  <!--Navigation-->
+  <nav class="top-nav">
+    <%= link_to "Logo", root_path %>
+    <%= link_to 'Posts', posts_path %>
+    <a href="/readme">Readme</a>
+  </nav>
+</header>
 
-  <% if action_name == "index" %>
-    <p>text</p>
-  <% end %>
-
-  <body>
-    <%= yield %>
-  </body>
+<body>
+<%= yield %>
+</body>
 </html>
