@@ -1,3 +1,4 @@
+<%= content_for :title, "Edit %s Page" %[@page.title] %>
 <h1>Edit Page:</h1>
 <%= render 'form', page: @page %>
 <%= link_to 'Back to All Pages', '/pages' %>

@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Welcome to the blog builder!</title>
+  <title>Home</title>
 </head>
 <body>
 <div>
   <header>
     <nav class="top-nav">
-      <a href="<%= pages_path %>>">Pages</a>
-      <a href="<%= posts_path %>>">Posts</a>
+      <%= link_to "Pages", "/pages" %>
+      <%= link_to "Posts", "/posts" %>
       <a href="/readme">Readme</a>
     </nav>
   </header>
