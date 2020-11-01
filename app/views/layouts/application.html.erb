@@ -8,17 +8,10 @@
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
-<header>
-  <!--Navigation-->
-  <nav class="top-nav">
-    <%= link_to "Logo", root_path, :class => current_class?(root_path) %>
-    <%= link_to 'Posts', posts_path, :class => current_class?(posts_path) %>
-    <%= link_to 'Pages', pages_path, :class => current_class?(pages_path) %>
-    <%= link_to 'Readme', readme_path, :class => current_class?(readme_path) %>
-    <%= link_to 'Playground', playground_path, :class => current_class?(playground_path) %>
-  </nav>
-</header>
+<header></header>
 <body>
+
+<%= render 'shared/nav' %>
 
 <%= yield %>
 </body>

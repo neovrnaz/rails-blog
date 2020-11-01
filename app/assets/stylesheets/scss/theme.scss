@@ -32,7 +32,7 @@ h2 {
 /*================ Navigation ================*/
 // Change background color
 .top-nav {
-  background-color: $black;
+  background-color: $eerie-black;
   overflow: hidden;
 }
 
@@ -49,10 +49,10 @@ h2 {
 // Change the color of links on hover
 .top-nav a:hover {
   background-color: #dddddd;
-  color: $black;
+  color: $eerie-black;
 }
 
- // Add a color to the currently selected link
+// Add a color to the currently selected link
 .top-nav a.active {
   background-color: #4caf50;
   color: white;
