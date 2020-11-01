@@ -6,15 +6,15 @@
 $color-text: #101010;
 $color-body-text: #101010;
 
-// Button colors
-$color-btn-primary: #60b077;
-$color-btn-primary-text: #080808;
-
 // Descriptive Base Colors
 $white: #ffffff;
 $black: #1f1f1f;
 $grey: #797e83;
 $light-gray: #f6f6f6;
+
+// Button colors
+$color-btn-primary: #60b077;
+$color-btn-primary-text: $white;
 
 // Color Usage
 $eerie-black: #262626ff;
@@ -26,6 +26,7 @@ $light-slate-gray: #698996ff;
 // Link buttons and secondary cta
 $color-link: $color-body-text;
 $opacity-link-hover: 0.6;
+$button-size-medium: 1.1em;
 
 // Overlays
 $opacity-image-overlay: 0.2;
@@ -48,8 +49,11 @@ $font-weight--medium: 400;
 $font-weight--bold: 700;
 $font-weight--ultra-bold: 900;
 
-// Header Font size
-$heading-font-size: 3.5em;
+// Font sizes
+$font-size-heading: 3.5em;
+$font-size-small: 1rem;
+$font-size-medium: 2rem;
+$font-size-large: 3rem;
 
 // Text
 $base-font-size: 1em;

@@ -1,7 +1,9 @@
 <%= content_for :title, "Welcome" %>
 
 <div class="image-container">
-  <%= image_tag "pic-forest.jpg", class: "forest-img" %>
+  <%= image_tag "forest.jpg", class: "forest-image" %>
   <h1 class="picture-heading-text">Welcome to the site!</h1>
 </div>
+
+<%= render 'posts/post_cards' %>
 

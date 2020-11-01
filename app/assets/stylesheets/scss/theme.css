@@ -7,14 +7,8 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+html {
+  box-sizing: border-box;
 }
 
 h1 {
@@ -26,6 +20,22 @@ h1 {
 h2 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 100;
+}
+
+/*================ Buttons ================*/
+.button-primary {
+  background-color: #60b077;
+  color: #ffffff;
+  display: inline-block;
+  float: left;
+  font-size: 1.1em;
+  font-weight: 400;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  height: 100px;
+  width: 200px;
 }
 
 /*================ Navigation ================*/
@@ -72,13 +82,89 @@ h2 {
   text-align: center;
 }
 
-.forest-img {
+.forest-image {
   position: relative;
   width: 100%;
   height: 500px;
   object-fit: cover;
   background-size: auto;
   opacity: 0.2;
+}
+
+/*================ Cards for welcome posts ================*/
+.post-cards {
+  background-color: #eeeeee;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.grid {
+  grid-gap: 6em;
+  grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
+  align-items: start;
+}
+
+.grid-item {
+  background-color: #ffffff;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.grid-item:hover {
+  transform: translate(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+
+.card-image {
+  display: block;
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 3rem;
+}
+
+.card-title {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #1f1f1f;
+  margin-bottom: 1.5em;
+}
+
+.card-body {
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  color: #698996ff;
+  margin-bottom: 2.5rem;
+}
+
+.card-button {
+  display: block;
+  width: 100px;
+  padding: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+  color: #97b1a6ff;
+  background-color: #c9c5baff;
+  border: none;
+  border-radius: 0.4rem;
+  transition: 0.2s;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+}
+
+.card-button:hover,
+.card-button:active {
+  background-color: #c9c5baff;
 }
 
 /*# sourceMappingURL=theme.css.map */
