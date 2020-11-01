@@ -1,0 +1,56 @@
+/*================ Variables ================*/
+
+/*================ Color Variables ================*/
+
+// Text colors
+$color-text: #101010;
+$color-body-text: #101010;
+
+// Button colors
+$color-btn-primary: #60b077;
+$color-btn-primary-text: #080808;
+
+// Descriptive Base Colors
+$white: #ffffff;
+$black: #1f1f1f;
+$grey: #797e83;
+$light-gray: #f6f6f6;
+
+// Color Usage
+$atomic-tangerine: #f79256ff;
+$deep-champagne: #fbd1a2ff;
+$middle-blue-green: #7dcfb6ff;
+$pacific-blue: #00b2caff;
+$yale-blue: #1d4e89ff;
+
+// Link buttons and secondary cta
+$color-link: $color-body-text;
+$opacity-link-hover: 0.6;
+
+// Overlays
+$opacity-image-overlay: 0.2;
+
+/*================ Typography ================*/
+
+// Font Stacks
+$font-url--google: 'http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900';
+$font-family--primary: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family--secondary: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// Heading
+$playfair-font--google: 'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap';
+$font-family-picture--heading: 'Playfair Display', serif;
+
+// Font Weights
+$font-weight--thin: 100;
+$font-weight--light: 300;
+$font-weight--medium: 400;
+$font-weight--bold: 700;
+$font-weight--ultra-bold: 900;
+
+// Header Font size
+$heading-font-size: 3.5em;
+
+// Text
+$base-font-size: 1em;
+$base-line: 1.2em;

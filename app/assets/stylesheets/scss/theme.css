@@ -2,6 +2,7 @@
 /*================ Variables ================*/
 /*================ Color Variables ================*/
 /*================ Typography ================*/
+/*================ Global Styles ================*/
 * {
   box-sizing: border-box;
 }
@@ -18,7 +19,7 @@ body {
 
 h1 {
   font-weight: 700;
-  font-size: 2.5em;
+  font-size: 3.5em;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -27,6 +28,7 @@ h2 {
   font-weight: 100;
 }
 
+/*================ Navigation ================*/
 .top-nav {
   background-color: #1f1f1f;
   overflow: hidden;
@@ -38,10 +40,11 @@ h2 {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-style: 0.4em;
+  font-style: 1em;
 }
 
-.container {
+/*================ Header ================*/
+.image-container {
   position: relative;
   text-align: center;
   white-space: nowrap;
@@ -49,7 +52,7 @@ h2 {
 
 .picture-heading-text {
   font-family: "Playfair Display", serif;
-  font-size: 2.5em;
+  font-size: 3.5em;
   color: #1f1f1f;
   top: 50%;
   left: 50%;
