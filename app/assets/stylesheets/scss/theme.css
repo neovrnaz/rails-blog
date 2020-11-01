@@ -43,6 +43,16 @@ h2 {
   font-style: 1em;
 }
 
+.top-nav a:hover {
+  background-color: #dddddd;
+  color: #1f1f1f;
+}
+
+.top-nav a.active {
+  background-color: #4caf50;
+  color: white;
+}
+
 /*================ Header ================*/
 .image-container {
   position: relative;

@@ -30,12 +30,13 @@ h2 {
 }
 
 /*================ Navigation ================*/
-
+// Change background color
 .top-nav {
   background-color: $black;
   overflow: hidden;
 }
 
+// Style the links inside the navigation bar
 .top-nav a {
   float: left;
   color: $light-gray;
@@ -43,6 +44,18 @@ h2 {
   padding: 14px 16px;
   text-decoration: none;
   font-style: $base-font-size;
+}
+
+// Change the color of links on hover
+.top-nav a:hover {
+  background-color: #dddddd;
+  color: $black;
+}
+
+ // Add a color to the currently selected link
+.top-nav a.active {
+  background-color: #4caf50;
+  color: white;
 }
 
 /*================ Header ================*/
