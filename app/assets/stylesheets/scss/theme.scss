@@ -81,7 +81,7 @@ a {
   color: $white;
 }
 
-/*================ Header ================*/
+/* ================ Header ================ */
 .hero-image {
   position: relative;
   text-align: center;
@@ -125,9 +125,9 @@ a {
   text-align: center;
 }
 
-/*================ Cards for welcome page ================*/
+/* ================ Cards for welcome page ================ */
 .post-cards {
-  background-color: #eaeeec;
+  background-color: $color-background;
   font-family: $font-family--primary;
   display: flex;
   justify-content: center;

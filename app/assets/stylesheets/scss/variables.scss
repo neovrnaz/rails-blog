@@ -1,6 +1,6 @@
-/*================ Variables ================*/
+/* ================ Variables ================ */
 
-/*================ Color Variables ================*/
+/* ================ Color Variables ================ */
 
 // Text colors
 $color-text: #101010;
@@ -26,6 +26,7 @@ $illuminating-emerald: #40916cff;
 $bottle-green: #2d6a4fff;
 $brunswick-green: #1b4332ff;
 $dark-jungle-green: #081c15ff;
+$color-background: #eaeeecff;
 
 // Link buttons and secondary cta
 $color-link: $color-body-text;
@@ -33,13 +34,25 @@ $opacity-link-hover: 0.6;
 $button-size-medium: 1.1em;
 
 // Overlays
-$opacity-image-overlay: 0.6;
+$opacity-image-overlay: 0.7;
 
-/*================ Typography ================*/
+/* ================ Typography ================ */
+
+/* Varela Round */
+@font-face {
+  font-family: 'Varela Round';
+  font-style: normal;
+  font-weight: 400;
+  src: font_url('varela-round-v6-latin-regular.eot'); /* IE9 Compat Modes */
+  src: font_url('varela-round-v6-latin-regular.eot') format('embedded-opentype'); /* IE6-IE8 */
+  src: font-url('varela-round-v6-latin-regular.woff2') format('woff2'); /* Super Modern Browsers */
+  src: font-url('varela-round-v6-latin-regular.woff') format('woff'); /* Modern Browsers */
+  src: font-url('varela-round-v6-latin-regular.ttf') format('truetype'); /* Safari, Android, iOS */
+  src: font-url('varela-round-v6-latin-regular.svg#VarelaRound') format('svg'); /* Legacy iOS */
+}
 
 // Font Stacks
-$font-url--google: 'http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900';
-$font-family--primary: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family--primary: 'Varela Round';
 $font-family--secondary: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 // Heading
