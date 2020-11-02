@@ -1,16 +1,25 @@
-/*================ Blog Builder ================*/
+/* ================ Blog Builder ================ */
 
 @import 'variables';
 
-/*================ Global Styles ================*/
+/* ================ Global Styles ================ */
 // Base Styles
 * {
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
   box-sizing: border-box;
+}
+
+body {
+  font-size: 1.4em;
+  font-family: $font-family--primary;
+  font-weight: $font-weight--bold;
+  color: $color-heading;
+  padding: 0;
+  margin: 0;
+  background: $color-background;
 }
 
 h1 {
@@ -61,6 +70,7 @@ a {
 
 // Style the links inside the navigation bar
 .top-nav a {
+  font-size: $font-size-medium;
   float: left;
   color: $bottle-green;
   text-align: center;
@@ -133,20 +143,21 @@ a {
   justify-content: center;
   align-items: center;
   // Position up and down
-  min-height: 90vh;
+  min-height: 80vh;
+  padding: 30px;
 }
 
 .card-grid {
   // Space between cards
-  margin: 14px;
+  margin: 23px;
   height: max-content;
-  display: card-grid;
+  display: grid;
   // Column Width
-  card-grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
   // Column Height
-  card-grid-auto-rows: 35em;
-  card-grid-gap: 3rem;
-  card-grid-auto-flow: dense;
+  grid-auto-rows: 25em;
+  grid-gap: 3rem;
+  grid-auto-flow: dense;
   justify-content: center;
 }
 

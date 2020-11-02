@@ -24,27 +24,18 @@
 * Both properties specify the size of the grid tracks and you declare
 * these properties inside of the grid container.
 */
-body {
-  font-size: 1.4em;
-  font-family: "Varela Round";
-  font-weight: 700;
-  color: #6e859c;
-  padding: 0;
-  margin: 0;
-  background: #eaeeecff;
-}
-
 .playground-grid {
-  background: #fffffff;
+  max-width: 800px;
+  display: grid;
+  background: #ffffff;
   border-radius: 0.285em;
   box-shadow: 0 0.1em 0 0 rgba(0, 0, 0, 0.1);
   margin: 45px auto;
-  display: grid;
-  grid-template-columns: 200px, 200px, 200px;
+  grid-template-columns: 100px auto 100px;
 }
 
 .item {
-  color: #fff;
+  color: #ffffff;
   text-shadow: 0 2px 0 rgba(110, 133, 156, 0.18);
   padding: 0.85em;
   background: #6e859c;

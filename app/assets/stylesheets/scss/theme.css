@@ -1,4 +1,4 @@
-/*================ Blog Builder ================*/
+/* ================ Blog Builder ================ */
 /* ================ Variables ================ */
 /* ================ Color Variables ================ */
 /* ================ Typography ================ */
@@ -20,14 +20,23 @@
   src: font-url("varela-round-v6-latin-regular.svg#VarelaRound") format("svg");
   /* Legacy iOS */
 }
-/*================ Global Styles ================*/
+/* ================ Global Styles ================ */
 * {
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
   box-sizing: border-box;
+}
+
+body {
+  font-size: 1.4em;
+  font-family: "Varela Round";
+  font-weight: 700;
+  color: #6e859c;
+  padding: 0;
+  margin: 0;
+  background: #eaeeecff;
 }
 
 h1 {
@@ -76,6 +85,7 @@ a {
 }
 
 .top-nav a {
+  font-size: 1.2em;
   float: left;
   color: #2d6a4fff;
   text-align: center;
@@ -127,7 +137,7 @@ a {
 
 .picture-copy-text {
   font-family: "Varela Round";
-  font-size: 1.3rem;
+  font-size: 0.8em;
   font-weight: 300;
   color: #ffffff;
   top: 65%;
@@ -145,17 +155,18 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 90vh;
+  min-height: 80vh;
+  padding: 30px;
 }
 
 .card-grid {
-  margin: 14px;
+  margin: 23px;
   height: max-content;
-  display: card-grid;
-  card-grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
-  card-grid-auto-rows: 35em;
-  card-grid-gap: 3rem;
-  card-grid-auto-flow: dense;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  grid-auto-rows: 25em;
+  grid-gap: 3rem;
+  grid-auto-flow: dense;
   justify-content: center;
 }
 
@@ -185,14 +196,14 @@ a {
 }
 
 .card-title {
-  font-size: 1.5rem;
+  font-size: 1.2em;
   font-weight: 500;
   color: #081c15ff;
   margin-bottom: 1.5em;
 }
 
 .card-body {
-  font-size: 1.3rem;
+  font-size: 0.8em;
   letter-spacing: 0.1rem;
   line-height: 1.7;
   color: #2d6a4fff;
@@ -202,7 +213,7 @@ a {
 .card-button {
   color: #d8f3dcff;
   background-color: #40916cff;
-  font-size: 1.5rem;
+  font-size: 1.2em;
   border-radius: 0.4rem;
   border: none;
   cursor: pointer;
