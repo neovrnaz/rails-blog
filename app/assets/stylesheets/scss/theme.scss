@@ -136,21 +136,21 @@ a {
   min-height: 90vh;
 }
 
-.grid {
+.card-grid {
   // Space between cards
   margin: 14px;
   height: max-content;
-  display: grid;
+  display: card-grid;
   // Column Width
-  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  card-grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
   // Column Height
-  grid-auto-rows: 35em;
-  grid-gap: 3rem;
-  grid-auto-flow: dense;
+  card-grid-auto-rows: 35em;
+  card-grid-gap: 3rem;
+  card-grid-auto-flow: dense;
   justify-content: center;
 }
 
-.grid-item {
+.card-grid-item {
   background-color: #ffffff;
   border-radius: 0.4rem;
   overflow: hidden;
@@ -159,7 +159,7 @@ a {
   transition: 0.2s;
 }
 
-.grid-item:hover {
+.card-grid-item:hover {
   transform: translate(-0.5%);
   box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
 }
