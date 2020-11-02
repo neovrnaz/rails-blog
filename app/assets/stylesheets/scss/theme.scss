@@ -45,6 +45,15 @@ a {
   font-family: $font-family--primary;
 }
 
+// Reusable container
+.container {
+  width: 200px;
+}
+
+.flex {
+  display: flex;
+}
+
 /*================ Buttons ================*/
 .button-primary {
   background-color: $color-btn-primary;
@@ -60,23 +69,22 @@ a {
   width: 20px;
 }
 
-/*================ Navigation ================*/
+/* ================ Navigation ================ */
 // Change background color
 .top-nav {
-  background-color: $white;
   overflow: hidden;
+  background-color: $white;
   font-family: $font-family--primary;
 }
 
-// Style the links inside the navigation bar
+// Links inside nav bar
 .top-nav a {
-  font-size: $font-size-medium;
   float: left;
+  font-size: $font-size-medium;
   color: $bottle-green;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-style: $base-font-size;
 }
 
 // Change the color of links on hover
@@ -84,6 +92,13 @@ a {
   background-color: #dddddd;
   color: $nyanza;
 }
+
+// Dropdown container
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
 
 // Add a color to the currently selected link
 .top-nav .active {

@@ -3,5 +3,19 @@
   <%= link_to "Logo", root_path, :class => current_class?(root_path) %>
   <%= active_link_to 'Posts', posts_path %>
   <%= active_link_to 'Readme', readme_path %>
-  <%= active_link_to 'Playground', playground_path %>
+  <div class="dropdown">
+    <%= active_link_to 'Playground', playground_path %>
+  </div>
 </nav>
+
+<!-- Dropdown for navigation -->
+<!--<div class="dropdown">-->
+<!--  <div class="dropbtn">Dropdown-->
+<!--    <i class="ff fa-caret-down"></i>-->
+<!--    <div class="dropdown-content">-->
+<!--      <a href="#">Link 1</a>-->
+<!--      <a href="#">Link 2</a>-->
+<!--      <a href="#">Link 3</a>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
