@@ -1,5 +1,5 @@
 class PlaygroundController < ApplicationController
   def index
-    render template: 'playgrounds/index.html.erb', layout: 'playground'
+    render template: 'playground/index.html.erb', layout: 'application'
   end
 end

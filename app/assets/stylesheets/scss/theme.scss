@@ -5,7 +5,8 @@
 /*================ Global Styles ================*/
 // Base Styles
 * {
-  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -23,11 +24,22 @@ h2 {
   font-weight: $font-weight--thin;
 }
 
+p {
+  font-family: $font-family--primary;
+}
+
+td {
+  font-family: $font-family--primary;
+}
+
+a {
+  font-family: $font-family--primary;
+}
+
 /*================ Buttons ================*/
 .button-primary {
   background-color: $color-btn-primary;
   color: $color-btn-primary-text;
-  display: inline-block;
   float: left;
   font-size: $button-size-medium;
   font-weight: $font-weight--medium;
@@ -35,21 +47,22 @@ h2 {
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  height: 100px;
-  width: 200px;
+  height: 10px;
+  width: 20px;
 }
 
 /*================ Navigation ================*/
 // Change background color
 .top-nav {
-  background-color: $eerie-black;
+  background-color: $white;
   overflow: hidden;
+  font-family: $font-family--primary;
 }
 
 // Style the links inside the navigation bar
 .top-nav a {
   float: left;
-  color: $light-gray;
+  color: $bottle-green;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -59,32 +72,21 @@ h2 {
 // Change the color of links on hover
 .top-nav a:hover {
   background-color: #dddddd;
-  color: $eerie-black;
+  color: $nyanza;
 }
 
 // Add a color to the currently selected link
-.top-nav a.active {
-  background-color: #4caf50;
-  color: white;
+.top-nav .active {
+  background-color: $bottle-green;
+  color: $white;
 }
 
 /*================ Header ================*/
-.image-container {
+.hero-image {
   position: relative;
   text-align: center;
   white-space: nowrap;
-}
-
-.picture-heading-text {
-  font-family: $font-family-picture--heading;
-  font-size: $font-size-heading;
-  color: $black;
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  margin-top: -60px;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  background: rgba(0, 0, 0, 10);
 }
 
 .forest-image {
@@ -94,26 +96,58 @@ h2 {
   object-fit: cover;
   background-size: auto;
   opacity: $opacity-image-overlay;
+  display: block;
 }
 
-/*================ Cards for welcome posts ================*/
+.picture-heading-text {
+  font-family: $font-family-picture--heading;
+  font-size: $font-size-heading;
+  font-weight: $font-weight--medium;
+  color: $white;
+  top: 54%;
+  left: 50%;
+  position: absolute;
+  margin-top: -60px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 
+.picture-copy-text {
+  font-family: $font-family--primary;
+  font-size: $font-size-small;
+  font-weight: $font-weight--light;
+  color: $white;
+  top: 65%;
+  left: 50%;
+  position: absolute;
+  margin-top: -60px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/*================ Cards for welcome page ================*/
 .post-cards {
-  // Card "Body"
-  background-color: #eeeeee;
+  background-color: #eaeeec;
   font-family: $font-family--primary;
   display: flex;
   justify-content: center;
   align-items: center;
-
   // Position up and down
-  min-height: 80vh;
+  min-height: 90vh;
 }
 
 .grid {
-  grid-gap: 6em;
-  grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
-  align-items: start;
+  // Space between cards
+  margin: 14px;
+  height: max-content;
+  display: grid;
+  // Column Width
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  // Column Height
+  grid-auto-rows: 35em;
+  grid-gap: 3rem;
+  grid-auto-flow: dense;
+  justify-content: center;
 }
 
 .grid-item {
@@ -133,7 +167,7 @@ h2 {
 .card-image {
   display: block;
   width: 100%;
-  height: 20rem;
+  height: 13rem;
   object-fit: cover;
 }
 
@@ -144,34 +178,140 @@ h2 {
 .card-title {
   font-size: $font-size-medium;
   font-weight: 500;
-  color: $black;
+  color: $dark-jungle-green;
   margin-bottom: 1.5em;
 }
 
 .card-body {
-  font-size: 1.6rem;
+  font-size: $font-size-small;
   letter-spacing: 0.1rem;
   line-height: 1.7;
-  color: $light-slate-gray;
+  color: $bottle-green;
   margin-bottom: 2.5rem;
 }
 
 .card-button {
-  display: block;
-  width: 100px;
-  padding: 1.5rem;
+  color: $nyanza;
+  background-color: $illuminating-emerald;
   font-size: $font-size-medium;
-  text-align: center;
-  color: $morning-blue;
-  background-color: $pale-silver;
-  border: none;
   border-radius: 0.4rem;
-  transition: 0.2s;
+  border: none;
   cursor: pointer;
-  letter-spacing: 0.1rem;
+  transition: 0.2s;
+  width: 100%;
+  height: 3.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
 .card-button:hover,
 .card-button:active {
-  background-color: $pale-silver;
+  background-color: $ocean-green;
+}
+
+/*================ Edit form ================*/
+.field {
+  font-family: $font-family--primary;
+}
+
+
+/*================ Subscribe to newsletter ================*/
+.subscription_area {
+  background-color: #fbfbfb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe_now {
+  h4 {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #34495e;
+    font-weight: 800;
+    text-align: center;
+  }
+  p {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    color: #34495e;
+    text-align: center;
+  }
+}
+
+.subscribe_form {
+  max-width: 470px;
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0px 2px 5px 0px rgba(10, 6, 20, 0.24);
+  &:focus {
+    outline: none;
+  }
+  .form-control {
+    border: none;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  input {
+    height: 44px;
+  }
+  button {
+    border: none;
+    height: 44px;
+    background-color: #0ed085;
+    color: #fff;
+    margin: -1px;
+    border-radius: 0;
+    justify-content: right;
+    width: 135px;
+    text-transform: uppercase;
+    position: relative;
+    transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+    &:hover, &:focus, &:active, &:visited {
+      color: #fff;
+      background-color: rgba(14, 208, 133, 0.77);
+      outline: none;
+      transition: all ease 0.3s;
+      -webkit-transition: all ease 0.3s;
+      -moz-transition: all ease 0.3s;
+      -o-transition: all ease 0.3s;
+      -ms-transition: all ease 0.3s;
+      &:before {
+        background-color: rgba(14, 208, 133, 0.77);
+        transition: all ease 0.3s;
+        -webkit-transition: all ease 0.3s;
+        -moz-transition: all ease 0.3s;
+        -o-transition: all ease 0.3s;
+        -ms-transition: all ease 0.3s;
+      }
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 0;
+      height: 1px;
+      background-color: #0ed085;
+      width: 100%;
+      transition: all ease 0.3s;
+      -webkit-transition: all ease 0.3s;
+      -moz-transition: all ease 0.3s;
+      -o-transition: all ease 0.3s;
+      -ms-transition: all ease 0.3s;
+    }
+  }
+  .input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group {
+    z-index: 2;
+    margin-left: 0px;
+  }
 }

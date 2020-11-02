@@ -1,9 +1,32 @@
 <%= content_for :title, "Welcome" %>
 
-<div class="image-container">
+<div class="hero-image">
   <%= image_tag "forest.jpg", class: "forest-image" %>
-  <h1 class="picture-heading-text">Welcome to the site!</h1>
+  <h1 class="picture-heading-text">Welcome to the blog builder!</h1>
+  <p class="picture-copy-text">Nov 1, 2020</p>
 </div>
 
 <%= render 'posts/post_cards' %>
 
+<div id="subscription-area">
+  <div id="subscription_area">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="subscribe_now">
+            <h4>subscribe</h4>
+            <p>Get connected to our insights</p>
+            <form class="subscribe_form">
+              <div class="input-group">
+                <input type="text" class="form-control" name="email" placeholder="Enter your email">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">subscribe</button>
+               </span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
