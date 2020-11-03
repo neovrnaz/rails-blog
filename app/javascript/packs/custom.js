@@ -13,7 +13,7 @@ function addNamesToPage(names) {
     const nameP = document.createElement('p');
     nameP.innerText = name.content;
     namesDiv.appendChild(nameP);
-    $(nameP).hide();
+    // $(nameP).hide();
     onClickButton('.names-button', nameP);
   }
 }

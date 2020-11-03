@@ -45,6 +45,10 @@ a {
   font-family: $font-family--primary;
 }
 
+.name-div p {
+  display: none;
+}
+
 /* ================ Reusable Classes ================ */
 
 .container {
