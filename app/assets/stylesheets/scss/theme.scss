@@ -286,18 +286,18 @@ a {
 .names {
   width: 100%;
   border: 3px;
+  padding: 8px;
 }
 
-#names-button {
+.names-button {
   color: #d8f3dcff;
   background-color: #40916cff;
-  margin-right: auto;
   font-size: 1.2em;
   border-radius: 0.4rem;
   border: none;
   cursor: pointer;
   transition: 0.2s;
-  width: 200px;
+  width: 230px;
   height: 3.4rem;
   display: flex;
   align-items: center;
@@ -307,13 +307,16 @@ a {
 
 .names-section {
   position: relative;
-  min-height: 100% !important;
+  min-height: 100%;
   margin-top: 20px;
   padding: 20px;
-  width: 35%;
+  width: 50%;
   background: $white;
   border-radius: 0.4rem;
   position: relative;
   height: auto;
-  min-height: 100% !important;
+}
+
+.edit-names {
+  display: none;
 }

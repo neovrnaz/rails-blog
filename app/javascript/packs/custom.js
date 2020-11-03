@@ -1,3 +1,4 @@
+// Allow/prevent looping inside of functions
 function onClickButton(selector, element) {
   $(selector).on('click', () => {
     $(element).toggle('');
@@ -5,14 +6,15 @@ function onClickButton(selector, element) {
 }
 
 function addNamesToPage(names) {
-  onClickButton('#names-button', '.appear-text');
-  const namesDiv = document.querySelector('.names');
+  onClickButton('.names-button', '.appear-text');
+  onClickButton('.names-button', '.edit-names');
+  const namesDiv = document.querySelector('.name-div');
   for (const name of names) {
     const nameP = document.createElement('p');
     nameP.innerText = name.content;
     namesDiv.appendChild(nameP);
     $(nameP).hide();
-    onClickButton('#names-button', nameP);
+    onClickButton('.names-button', nameP);
   }
 }
 
