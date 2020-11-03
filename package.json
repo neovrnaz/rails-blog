@@ -10,6 +10,8 @@
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "4.3.0",
     "@shopify/stylelint-plugin": "^10.0.1",
+    "jquery": "^3.5.1",
+    "jquery-ujs": "^1.2.2",
     "normalize.css": "^8.0.1",
     "prettier": "^2.1.2",
     "stylelint": "^13.7.2",

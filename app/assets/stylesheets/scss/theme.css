@@ -46,7 +46,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Varela Round";
   font-weight: 100;
 }
 
@@ -62,15 +62,22 @@ a {
   font-family: "Varela Round";
 }
 
+/* ================ Reusable Classes ================ */
 .container {
-  width: 200px;
+  margin-top: 100px;
+  margin-bottom: 160px;
 }
 
 .flex {
   display: flex;
 }
 
-/*================ Buttons ================*/
+.wrapper {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+/* ================ Buttons ================ */
 .button-primary {
   background-color: #60b077;
   color: #ffffff;
@@ -243,9 +250,76 @@ a {
   background-color: #74c69dff;
 }
 
-/*================ Edit form ================*/
+/* ================ Edit form ================ */
 .field {
   font-family: "Varela Round";
+}
+
+/* ================ Playground ================ */
+/* ================ CSS Grid ================ */
+/*
+* We define grid tracks using grid-template-columns and grid-template-rows.
+* Both properties specify the size of the grid tracks and you declare
+* these properties inside of the grid container.
+*/
+.css-grid {
+  max-width: 800px;
+  display: grid;
+  background: #ffffff;
+  border-radius: 0.285em;
+  box-shadow: 0 0.1em 0 0 rgba(0, 0, 0, 0.1);
+  margin: 45px auto;
+  grid-template-columns: 200px auto 200px;
+  grid-template-rows: 200px 100px;
+}
+
+.item {
+  color: #ffffff;
+  text-shadow: 0 2px 0 rgba(110, 133, 156, 0.18);
+  padding: 0.85em;
+  background: #6e859c;
+  border: solid 1px rgba(110, 133, 156, 0.15);
+  border-radius: 0.3em;
+}
+
+.item:nth-child(even) {
+  background: #a5cee9;
+}
+
+/* ================ Ajax Names ================ */
+.names {
+  width: 100%;
+  border: 3px;
+}
+
+#names-button {
+  color: #d8f3dcff;
+  background-color: #40916cff;
+  margin-right: auto;
+  font-size: 1.2em;
+  border-radius: 0.4rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+  width: 200px;
+  height: 3.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.names-section {
+  position: relative;
+  min-height: 100% !important;
+  margin-top: 20px;
+  padding: 20px;
+  width: 35%;
+  background: #ffffff;
+  border-radius: 0.4rem;
+  position: relative;
+  height: auto;
+  min-height: 100% !important;
 }
 
 /*# sourceMappingURL=theme.css.map */
