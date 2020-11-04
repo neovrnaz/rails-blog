@@ -21,8 +21,9 @@ function addNamesToPage(names) {
 document.addEventListener('DOMContentLoaded', () => {
   fetch('/names.json')
     .then((result) => result.json())
-    .then(addNamesToPage)
-    .catch((error) => {
-      alert(`Sorry: ${error}`);
-    });
+    .then(addNamesToPage);
+  // Activate when page specific javascript has been implemented
+  // .catch((error) => {
+  //   alert(`Sorry: ${error}`);
+  // });
 });

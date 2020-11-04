@@ -45,15 +45,11 @@ a {
   font-family: $font-family--primary;
 }
 
-.name-div p {
-  display: none;
-}
-
 /* ================ Reusable Classes ================ */
 
 .container {
-  margin-top: 100px;
-  margin-bottom: 160px;
+  margin-top: 120px;
+  margin-bottom: 151px;
 }
 
 .flex {
@@ -162,38 +158,43 @@ a {
 }
 
 /* ================ Cards for welcome page ================ */
+
 .post-cards {
   background-color: $color-background;
+  padding: 22px;
   font-family: $font-family--primary;
   display: flex;
   justify-content: center;
   align-items: center;
   // Position up and down
   min-height: 80vh;
-  padding: 30px;
 }
 
 .card-grid {
   // Space between cards
-  margin: 23px;
-  height: max-content;
-  display: grid;
+  margin: 20px;
   // Column Width
-  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  grid-template-columns: fit-content(40ch) fit-content(40ch) 1fr;
   // Column Height
-  grid-auto-rows: 25em;
-  grid-gap: 3rem;
+  grid-auto-rows: 1fr;
+  height: auto;
+  grid-gap: 1rem;
   grid-auto-flow: dense;
   justify-content: center;
+  min-height: 100vh;
+  display: flex;
 }
 
 .card-grid-item {
+  flex: 1;
   background-color: #ffffff;
   border-radius: 0.4rem;
   overflow: hidden;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: 0.2s;
+  grid-template-columns: fit-content(8ch) fit-content(8ch) 1fr;
+  height: 570px;
 }
 
 .card-grid-item:hover {
@@ -210,6 +211,7 @@ a {
 
 .card-content {
   padding: 3rem;
+  overflow: auto;
 }
 
 .card-title {
@@ -271,7 +273,8 @@ a {
   box-shadow: 0 0.1em 0 0 rgba(0, 0, 0, 0.1);
   margin: 45px auto;
   grid-template-columns: 200px auto 200px;
-  grid-template-rows: 200px 100px;
+  grid-template-rows: 200px 200px;
+  grid-gap: 20px;
 }
 
 .item {
@@ -287,6 +290,12 @@ a {
 }
 
 /* ================ Ajax Names ================ */
+
+/*
+* AJAX is a set of techniques used to dynamically display content and data.
+* This is often referred to as asynchronous programming.
+*/
+
 .names {
   width: 100%;
   border: 3px;
@@ -322,5 +331,10 @@ a {
 }
 
 .edit-names {
+  display: none;
+}
+
+
+.name-div p {
   display: none;
 }
