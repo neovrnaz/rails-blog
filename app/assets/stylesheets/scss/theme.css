@@ -268,13 +268,13 @@ a {
 * these properties inside of the grid container.
 */
 .css-grid {
-  max-width: 800px;
+  max-width: 1000px;
   display: grid;
   background: #ffffff;
   border-radius: 0.285em;
   box-shadow: 0 0.1em 0 0 rgba(0, 0, 0, 0.1);
   margin: 45px auto;
-  grid-template-columns: 200px auto 200px;
+  grid-template-columns: 200px 1fr 200px;
   grid-template-rows: 200px 200px;
   grid-gap: 20px;
 }
@@ -327,7 +327,6 @@ a {
   width: 50%;
   background: #ffffff;
   border-radius: 0.4rem;
-  position: relative;
   height: auto;
 }
 

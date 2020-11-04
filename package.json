@@ -1,52 +1,56 @@
 {
-  "name": "rails_blog",
-  "private": true,
+  "name": "rails-blog",
+  "version": "1.0.0",
+  "description": "The default configurations and rules for Shopify.",
+  "main": "index.js",
   "scripts": {
-    "lint": "eslint . --max-warnings 0"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "@rails/actioncable": "^6.0.0",
-    "@rails/activestorage": "^6.0.0",
-    "@rails/ujs": "^6.0.0",
-    "@rails/webpacker": "4.3.0",
-    "@shopify/stylelint-plugin": "^10.0.1",
-    "jquery": "^3.5.1",
-    "jquery-ujs": "^1.2.2",
-    "normalize.css": "^8.0.1",
-    "prettier": "^2.1.2",
-    "stylelint": "^13.7.2",
-    "turbolinks": "^5.2.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neovrnaz/shopify-config.git"
   },
-  "version": "0.1.0",
+  "keywords": [
+    "shopify-config",
+    "shopify",
+    "@shopify/prettier-config",
+    "@shopify/babel-preset",
+    "@shopify/eslint-plugin",
+    "@shopify/stylelint-plugin"
+  ],
+  "author": "neovrnaz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neovrnaz/shopify-config/issues"
+  },
+  "homepage": "https://github.com/neovrnaz/shopify-config#readme",
   "devDependencies": {
-    "@babel/core": "^7.12.3",
-    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
-    "@babel/plugin-transform-runtime": "^7.12.1",
     "@shopify/babel-preset": "23.1.2",
+    "@shopify/eslint-plugin": "^39.0.2",
     "@shopify/prettier-config": "^1.1.2",
-    "babel-jest": "^26.6.1",
+    "@shopify/stylelint-plugin": "^10.0.1",
+    "babel-core": "6.26.3",
     "eslint": "^7.12.1",
-    "eslint-plugin-json": "^2.1.2",
-    "eslint-plugin-shopify": "^35.1.0",
-    "regenerator-runtime": "^0.13.7",
-    "webpack-dev-server": "^3.11.0"
+    "prettier": "^2.1.2",
+    "stylelint": "^13.7.2"
   },
+  "babel": {
+    "presets": [
+      "@shopify/babel-preset/web"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:shopify/esnext",
+      "plugin:shopify/prettier",
+      "plugin:shopify/stylelint"
+    ]
+  },
+  "prettier": "@shopify/prettier-config",
   "stylelint": {
     "extends": [
       "@shopify/stylelint-plugin",
       "@shopify/stylelint-plugin/prettier"
-    ],
-    "rules": {
-      "comment-whitespace-inside": "always",
-      "color-no-hex": null
-    }
-  },
-  "prettier": {
-    "singleQuote": true,
-    "trailingComma": "es5",
-    "bracketSpacing": false
-  },
-  "eslintConfig": {
-    "extends": "plugin:shopify/esnext"
+    ]
   }
 }
